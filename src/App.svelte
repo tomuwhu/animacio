@@ -4,7 +4,7 @@
   setInterval(() => {
     x += xi
     y += yi
-    xi -= (x - ex) * 0.0001
+    xi -= (x - ex + 20) * 0.0001
     yi -= (y - ey) * 0.0001
     if (x >= window.innerWidth-60)
       xi = -Math.abs(xi) / 2
